@@ -1,0 +1,9 @@
+[33m192ee29[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/feature/auth[m[33m, [m[1;31morigin/develop[m[33m, [m[1;31morigin/HEAD[m[33m, [m[1;32mfeature/auth[m[33m, [m[1;32mdevelop[m[33m)[m fix: мелкие исправления и улучшение интерфейса
+[33m1d24cba[m chore: добавил .gitignore
+[33mc4232a1[m chore: добавил зависимости в requirements.txt
+[33mbd0d72d[m docs: добавил README.md с описанием проекта
+[33mdc734c3[m docs: добавил requirements.md, user_guide.md, architecture.md
+[33m45b0167[m feat: добавил HTML-шаблоны (index, history, login, register)
+[33m3ae5e72[m feat: добавил app.py с маршрутами и сессиями
+[33md6933b5[m feat: добавил database.py с моделями users, habits, logs
+[33m9f3a70a[m Create твпр
