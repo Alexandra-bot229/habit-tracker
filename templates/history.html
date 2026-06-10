@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>История - {{ habit.name }}</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-light">
+    <div class="container py-4" style="max-width: 600px;">
+        <div class="card shadow">
+            <div class="card-header bg-info text-white">
+                <h3 class="mb-0">📅 История: {{ habit.name }}</h3>
+            </div>
+            <div class="card-body">
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <th>Дата</th>
+                            <th>Статус</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for log in logs %}
+                        <tr class="{% if log.completed %}table-success{% else %}table-danger{% endif %}">
+                            <td>{{ log.date }}</td>
+                            <td>
+                                {% if log.completed %}
+                                    ✅ Выполнено
+                                {% else %}
+                                    ❌ Пропущено
+                                {% endif %}
+                            </td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+                <a href="/" class="btn btn-secondary">← Назад</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
